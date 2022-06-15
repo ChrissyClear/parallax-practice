@@ -2,52 +2,123 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Page Title</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
-    <!-- stylesheet placed after bootstrap can extend/override its classes -->
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Day 7 Parallax</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Slab&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"
-        defer>
-    </script>
+        defer></script>
+<script src="https://kit.fontawesome.com/f9c9c624ab.js" crossorigin="anonymous" defer></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" defer></script>
+
 </head>
 
 <body>
-    <h1>Main Point</h1>
+
+  <!-- add navbar-expand-lg to have buttons show/take away to just leave hamburger menu -->
+  <nav class="navbar navbar-expand-lg navbar-light navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand text-info" href="#">NAVBAR</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- me-auto = left aligned ms-auto = right aligned -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-dark" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.californiabeaches.com/top-10-beaches-in-california/"
+              target="_blank">World Wonders</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Vacation Ready
+            </a>
+            <ul class="dropdown-menu text-success" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item"
+                  href="https://www.google.com/search?q=surfboard&rlz=1C1CHZN_enUS941US941&sxsrf=ALiCzsZqJO-_YuVscunxS7IjjIQ5P8ZKmQ:1651187936675&source=lnms&tbm=shop&sa=X&sqi=2&ved=2ahUKEwim0LCz8rf3AhXYZ94KHbfAAjAQ_AUoAXoECAEQAw&biw=1920&bih=937&dpr=1"
+                  id="02" target="_blank">Passports</a></li>
+              <li><a class="dropdown-item" href="https://www.harboursurfboards.com/surfboard-care" id="03"
+                  target="_blank">Suit Cases</a></li>
+              <li><a class="dropdown-item" href="https://getfoamie.com/surf-camps-california/" id="04"
+                  target="_blank">Clothing</a></li>
+              <hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="https://youtu.be/_ZkfD0k8F2c" target="_blank" id="05">Shoes</a></li>
+              <li><a class="dropdown-item" href="https://panamajack.com/blogs/at-the-beach" target="_blank">Party</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-info" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
 
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/photo 1 white towers.webp" class="d-block w-100" alt="white towers">White Towers
-          </div>
-          <div class="carousel-item">
-            <img src="img/photo 2 stairs.webp" class="d-block w-100" alt="stairs">Stairs
-          </div>
-          <div class="carousel-item">
-            <img src="img/photo 3 rock piles.webp" class="d-block w-100" alt="rock piles">Rock Piles
-          </div>
-          <div class="carousel-item">
-            <img src="img/photo 4 red bridge.webp" class="d-block w-100" alt="red bridge">Red Bridge
-          </div>
-          <div class="carousel-item">
-            <img src="img/photo 5 lake in mountains.webp" class="d-block w-100" alt="Lake in the Mountains">Lake in the Mountains
-          </div>
+            <div class="carousel-item active">
+                <img src="img/photo 1 white towers.webp" class="d-block w-100" alt="white towers">White Towers
+            </div>
+            <div class="carousel-item">
+                <img src="img/photo 2 stairs.webp" class="d-block w-100" alt="stairs">Stairs
+            </div>
+            <div class="carousel-item">
+                <img src="img/photo 3 rock piles.webp" class="d-block w-100" alt="rock piles">Rock Piles
+            </div>
+            <div class="carousel-item">
+                <img src="img/photo 4 red bridge.webp" class="d-block w-100" alt="red bridge">Red Bridge
+            </div>
+            <div class="carousel-item">
+                <img src="img/photo 5 lake in mountains.webp" class="d-block w-100" alt="Lake in the Mountains">Lake in
+                the Mountains
+            </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
         </button>
-      </div>
+    </div>
+    <footer class="footer bg-secondary">
+        <div>
+            <a href="https://www.facebook.com/nationalparkservice" target="_blank"><i
+                    class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com/nationalparkservice" target="_blank"><i
+                    class="fa-brands fa-youtube"></i></a>
+            <a href="https://twitter.com/natlparkservice" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/nationalparkservice/" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.flickr.com/photos/nationalparkservice" target="_blank"><i
+                    class="fa-brands fa-flickr"></i></a>
 
-    <section class="footer"></section>
+            <div class="text-light">&copy; 2022 | MFWCC</div>
+
+            <a class="text-info" href="#top">Back to Top</a>
+        </div>
+    </footer>
+
 </body>
 
 </html>
