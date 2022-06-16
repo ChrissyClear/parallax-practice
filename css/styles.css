@@ -7,10 +7,6 @@ body {
 
 nav {
     background-color: rgb(88, 86, 86);
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 1;
     margin-bottom: 10px;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -22,16 +18,16 @@ nav {
 
 ul li {
     background-color: rgb(255, 255, 255);
-    border: 2px solid rgb(12, 12, 12);
+    border: 2px solid rgb(108, 117, 125);
     margin: 5px;
 }
 
 ul li a {
-    color: rgb(39, 11, 39) !important;
+    color: rgb(226, 169, 12) !important;
 }
 
 ul li:hover {
-    background-color: rgb(39, 11, 39);
+    background-color: rgb(108, 117, 125);
 }
 
 .nav-item:hover .nav-link {
@@ -41,7 +37,7 @@ ul li:hover {
 .list {
     text-decoration: none;
     margin: 5px;
-    color: rgb(13, 202, 240);
+    color: rgb(108, 117, 125);
     margin-left: 34px;
 }
 
@@ -99,26 +95,25 @@ p {
 }
 
 footer {
-    border: 2px solid;
     text-align: center;
 }
 
 .fa-facebook-f {
-    color: rgb(13, 202, 240);
+    color: rgb(108, 117, 125);
 }
 
 .fa-youtube {
-    color: rgb(13, 202, 240);
+    color: rgb(108, 117, 125)
 }
 
 .fa-twitter {
-    color: rgb(13, 202, 240);
+    color: rgb(108, 117, 125);
 }
 
 .fa-instagram {
-    color: rgb(13, 202, 240);
+    color: rgb(108, 117, 125);
 }
 
 .fa-flickr {
-    color: rgb(13, 202, 240);
+    color: rgb(108, 117, 125);
 }
