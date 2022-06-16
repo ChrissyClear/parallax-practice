@@ -42,16 +42,15 @@ ul li:hover {
     text-decoration: none;
     margin: 5px;
     color: rgb(13, 202, 240);
-    margin-left: 40px;
-    padding-left: 50px;
+    margin-left: 34px;
 }
 
 .parallax {
     /* The image used */
-    background-image: url("../img/photo\ 5\ lake\ in\ mountains.webp");
+    background-image: url("../img/Taj\ Mahal-India.webp");
 
     /* Set a specific height */
-    min-height: 600px;
+    min-height: 100%;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -73,11 +72,11 @@ ul li:hover {
 
 /* add sub-sections for each section for each of the 10 beaches  */
 .content {
-    background-color: rgb(39, 11, 39);
+    background-color:transparent;
     text-align: center;
     width: 1500px;
     padding: 50px;
-    height: 800px;
+    height: 1400px;
 
 }
 
