@@ -47,7 +47,7 @@ ul li:hover {
 
 .parallax {
     /* The image used */
-    background-image: url("../img/Taj\ Mahal-India.webp");
+    background-image: url("../img/Stonehenge.webp");
 
     /* Set a specific height */
     min-height: 100%;
@@ -66,7 +66,7 @@ ul li:hover {
 }
 
 .text-back {
-    border: 5px solid rgb(13, 202, 240, 0.5);
+    border: 5px solid rgb(226, 169, 12, 0.5);
     padding: 15px;
 }
 
@@ -76,17 +76,17 @@ ul li:hover {
     text-align: center;
     width: 1500px;
     padding: 50px;
-    height: 1400px;
+    height: 1500px;
 
 }
 
-.la-jolla {
-    border: 5px solid rgb(13, 202, 240, 0.5);
+.wonders {
+    border: 5px solid rgb(226, 169, 12, 0.5);
 }
 
 h1 {
     color: rgb(255, 255, 255);
-    text-shadow: 8px 8px rgb(12, 12, 12);
+    text-shadow: 1px 1px rgb(12, 12, 12);
 }
 
 p {
@@ -94,6 +94,8 @@ p {
     letter-spacing: 2px;
     font-size: 40px;
     color: rgb(255, 255, 255);
+    text-shadow: 1px 1px rgb(12, 12, 12);
+    font-weight: bolder;
 }
 
 footer {
