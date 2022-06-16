@@ -98,6 +98,10 @@ footer {
     text-align: center;
 }
 
+i {
+    margin-left: 18px;
+}
+
 .fa-facebook-f {
     color: rgb(108, 117, 125);
 }
@@ -110,10 +114,10 @@ footer {
     color: rgb(108, 117, 125);
 }
 
-.fa-instagram {
+.fa-linkedin {
     color: rgb(108, 117, 125);
 }
 
-.fa-flickr {
+.fa-person-walking-luggage {
     color: rgb(108, 117, 125);
 }
